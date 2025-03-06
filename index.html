@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensibilisation à la Cybersécurité</title>
+    <style>
+        /* Style global */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f1f1f1;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #2f2f2f;
+            color: white;
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header h3 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        section {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeIn 1s forwards;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        section ul li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .call-to-action {
+            background-color: #ff9900;
+            color: white;
+            padding: 15px;
+            font-size: 1.2rem;
+            margin-top: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .call-to-action:hover {
+            background-color: #ff6600;
+        }
+
+        footer {
+            background-color: #2f2f2f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+
+        footer p {
+            display: inline-block;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        /* Animation d'apparition */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            .call-to-action {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Attention aux Dangers du Web !</h1>
+    <h3>Sensibilisation à la cybersécurité et comment vous protéger des cyberattaques.</h3>
+</header>
+
+<section>
+    <h2>Scénario de Cyberattaque</h2>
+    <p>Imaginez recevoir un e-mail prétendant venir de votre banque. Le message vous dit que votre compte est compromis et vous invite à cliquer sur un lien pour sécuriser votre compte. Ce lien vous mène à une page web ressemblant à celle de votre banque, mais c’est en réalité une copie frauduleuse. Une fois vos informations bancaires saisies, elles sont envoyées directement aux attaquants.</p>
+</section>
+
+<section>
+    <h2>Conseils de Sécurité</h2>
+    <ul>
+        <li>Ne jamais cliquer sur des liens dans des e-mails non sollicités.</li>
+        <li>Vérifier toujours l'URL des sites avant de saisir des informations personnelles.</li>
+        <li>Utiliser des mots de passe forts et actifs (exemple : "Utilisez des caractères spéciaux, des chiffres et des lettres").</li>
+        <li>Activer l'authentification à deux facteurs pour tous vos comptes en ligne.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Restez Vigilant !</h2>
+    <p>Dans le monde numérique d'aujourd'hui, une simple négligence peut coûter cher. Restez informé et protégez-vous contre les cyberattaques !</p>
+</section>
+
+<div class="call-to-action">
+    <p>Protégez-vous maintenant ! Si vous avez des questions ou des doutes, contactez-nous pour plus d'informations.</p>
+</div>
+
+<footer>
+
+        <img src="images/enetik.png" alt="Logo de l'entreprise" width="150">
+        <p>Appelez-nous au <strong>(+33) 04 90 83 49 48</strong></p>
+</footer>
+
+</body>
+</html>
